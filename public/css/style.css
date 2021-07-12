@@ -1,0 +1,503 @@
+header {
+    background-image: url("https://www.wolterskluwer.com/-/media/project/wolterskluwer/oneweb/www/lr/it/offerta-fisco-lavoro-contabilita/it-offerta-fisco-lavoro-e-contabilita-main-page.jpg?rev=a76dc41a33d94b22ad38cba1ac131d18");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    border-bottom: 1px solid darkslategray;
+
+    position: relative;
+}
+
+#container {
+    height:auto !important;
+}
+
+#avviso {
+    text-align: center;
+    font-size: 30px;
+}
+
+#Nome_sito, nav{
+    z-index: 1;
+}
+
+#Nome_sito{
+    color: darkslategray;
+    font-weight: bolder;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px white;
+}
+
+html, body {
+    margin: 0;
+    background-color: mintcream;
+    height: 100%;
+
+    font-family: 'Oswald', sans-serif;
+}
+
+a:link{
+    color:white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: indigo;
+}
+a:hover{
+    color: darkslateblue;
+}
+
+
+#main a{
+    display: inline-block;
+    font-size: 20px;
+}
+
+#links a{
+    font-weight: bold;
+    font-size: 25px;
+    background-color: white;
+    color: darkslategrey;
+    padding: 5px 15px;
+    border: 1px solid darkslategrey;
+    border-radius:50px;
+    z-index: 0;
+    box-shadow: 2px 1px 3px 1px black;
+}
+
+#Nome_sito h3{
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    max-height: 50px;
+    width: 100%;
+    color: white;
+
+    position: fixed;
+    bottom: 0;
+}
+
+
+#element1{
+    margin-left: 25px;
+}
+#element2{
+    margin-right: 25px;
+}
+#main , #preferiti {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: mintcream;
+
+    align-items: center;
+}
+
+
+.separatore{
+    background-color: darkslategrey;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+
+    border-bottom: 2px solid dimgrey;
+    border-top: 2px solid dimgrey;
+
+    box-shadow: 0 4px 5px 0 black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.separatore h1 {
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.offerta {
+    background-color: darkslategrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding:30px;
+    margin:20px;
+
+    min-height: 30%;
+    height: auto;
+    width: 40%;
+
+    border: 2px solid dimgrey;
+    border-radius: 10px;
+
+    position: relative;
+
+    box-shadow: 5px 3px 8px 2px black;
+}
+
+
+/*#ricerca {
+    -webkit-box-shadow:  2px  2px 1px black;
+} */
+
+
+.testo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.stella {
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    height: 15%;
+    max-height: 25px;
+    width: auto;
+}
+
+#modale_commenti {
+    position: absolute;
+    top:15%;
+    right: 15%;
+
+    min-height: 70%;
+    width: 70%;
+
+    background-color: darkslategrey;
+    z-index: 5;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    border: 3px solid lightslategrey;
+    border-radius: 10px;
+    box-shadow: 2px 1px 2px 1px black;
+
+}
+
+#modale_commenti input {
+    height: 40%;
+}
+
+#commenti{
+    margin: 20px;
+
+
+
+}
+
+#overlay_commenti {
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+.commentIcon{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    height: 15%;
+    max-height: 25px;
+    width: auto;
+
+    background-color: antiquewhite;
+
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.corpo{
+    color:white;
+}
+
+.titolo{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 20px;
+}
+
+@media (max-width: 740px){
+    body{
+        font-size: 6px;
+    }
+}
+
+#menu{
+    display: none;
+}
+
+#menu div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.bottone {
+    color: darkslategray;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border-radius: 1px;
+    transition: 0.2s;
+
+    box-shadow: 2px 1px 2px 1px black;
+}
+
+
+
+@media (max-width: 600px) {
+    #Nome_sito {
+        display: flex;
+        justify-content: center;
+        margin-left: 10%;
+        font-size: 600%;
+    }
+}
+
+@media (max-width: 539px) {
+    #Nome_sito {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 440px) {
+    #Nome_sito {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:15px;
+}
+
+
+main {
+    display: flex;
+}
+
+#form_ {
+    display: inline-block;
+    align-items: center;
+    width: 40%;
+    margin: 100px 30%;
+    font-size: 1.3em;
+}
+
+#form_ img {
+    max-width: 60%;
+    max-height: auto;
+    margin: 5px 30%
+}
+
+form label {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px 5px 10px;
+}
+
+/* //////////////////////// */
+h4 a:link {
+    color:darkblue;
+    text-decoration: none;
+}
+
+#notizie {
+    display: inline-block;
+    background-color: mintcream;
+
+    margin-left: 10px;
+    margin-top: 20px;
+
+    align-items: center;
+}
+.frase .corpo{
+    color: black;
+    font-size: large;
+}
+
+.argomento img{
+    width: 250px;
+    margin-bottom: 30px;
+}
+.frase{
+    display: inline-block;
+    margin-left: 30px;
+    position:absolute;
+}
+
+@media (max-width: 740px){
+    .argomento img{
+        width: 150px;
+        margin-bottom: 25px;
+    }
+}
+h4{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h2{
+    font-size: 250%;
+    text-align: center;
+}
+
+h2 a:link{
+    color: black;
+}
+h5 {
+    display: none;
+}
+
+c {
+    font-size: 100%;
+    color:red;
+}
+
+.commento {
+    padding: 20px;
+    background-color: antiquewhite;
+
+    margin: 5px;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 40vw;
+
+    border-radius: 10px;
+    border: 3px solid lightslategrey;
+    box-shadow: 2px 1px 2px 1px black;
+
+}
+
+.commento label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:3px;
+
+}
+
+
+.hide {
+    display: none;
+}
+
+/* /////////////////////////////////////// */
+#menuAperto, #menuChiuso{
+    display: none;
+}
+#modale_menu {
+    position: fixed;
+    top:15%;
+    right: 15%;
+
+    min-height: 70%;
+    width: 70%;
+
+    z-index: 5;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+
+    border: 3px solid lightslategrey;
+    border-radius: 10px;
+    box-shadow: 2px 1px 2px 1px black;
+    background-color: rgba(0,0,0,0.2);
+
+}
+
+
+
+@media (min-width: 771px) {
+    #menuButton{
+        display: none;
+    }
+    #menuButton2{
+        display: none;
+    }
+    #modale_menu{
+        display: none !important;
+    }
+}
+
+
+#menuButton{
+    display: none;
+}
+
+
+@media (max-width: 770px) {
+    #links{
+        display: none;
+    }
+    #menuChiuso{
+        display: inline-block;
+    }
+    #menuButton{
+        display: inline-block;
+    }
+    #Nome_sito{
+        display: flex;
+        justify-content: center;
+        margin-left: 15%;
+    }
+}
+
+
+#menuChiuso div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+#menuAperto div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
